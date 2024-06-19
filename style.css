@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #ececec !important; /* Cor de fundo do body */
+  color: #242424;
+}
+
+.container {
+  display: flex; /* Centraliza vertical e horizontalmente o conteúdo */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+}
+
+.dados {
+  text-align: center;
+  padding: 30px;
+  background-color: #979797; /* Cor de fundo da seção */
+  border-radius: 15px; /* Bordas arredondadas */
+  backdrop-filter: blur(50px); /* Efeito blur no fundo */
+}
+
+.resultado {
+  margin-top: 20px;
+}
+
+.resultado img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}

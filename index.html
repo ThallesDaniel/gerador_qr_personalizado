@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qr personalizado</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <section class="dados my-5">
+        <h1 class="text-center mb-4">Gerador de QR code Personalizado</h1>
+
+        <div class="mb-3">
+          <label for="conteudo" class="form-label"
+            >Informe o conteúdo do QR:</label
+          >
+          <input
+            type="text"
+            id="conteudo"
+            class="form-control"
+            placeholder="Informe o conteúdo do QRcode (Link, Texto, etc.)"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <div class="input-group">
+            <label for="cor" class="input-group-text"
+              >Informe a Cor Desejada:</label
+            >
+            <input
+              type="color"
+              id="cor"
+              class="form-control form-control-color"
+              value="#000000"
+              title="Escolha a cor"
+            />
+          </div>
+          <div class="input-group">
+            <label class="input-group-text" for="logo"
+              >Adicione sua logo ao QR (opcional)</label
+            >
+            <input
+              type="file"
+              class="form-control"
+              id="logo"
+              accept=".png, .jpg, .jpeg"
+            />
+          </div>
+        </div>
+
+        <button id="gerar" class="btn btn-primary">Gerar o QRcode</button>
+
+        <article id="resultado" class="resultado mt-4"></article>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
+</html>
