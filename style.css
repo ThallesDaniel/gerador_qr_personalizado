@@ -23,6 +23,17 @@ body {
   border-radius: 15px; /* Bordas arredondadas */
   backdrop-filter: blur(50px); /* Efeito blur no fundo */
 }
+/* style.css */
+.input-wrapper {
+  overflow: hidden; /* Clear floats */
+}
+
+.input-group {
+  float: left;
+  width: 48% !important;
+  margin-bottom: 15px; 
+}
+
 
 .resultado {
   margin-top: 20px;

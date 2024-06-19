@@ -31,29 +31,17 @@
         </div>
 
         <div class="mb-3">
-          <div class="input-group">
-            <label for="cor" class="input-group-text"
-              >Informe a Cor Desejada:</label
-            >
-            <input
-              type="color"
-              id="cor"
-              class="form-control form-control-color"
-              value="#000000"
-              title="Escolha a cor"
-            />
-          </div>
-          <div class="input-group">
-            <label class="input-group-text" for="logo"
-              >Adicione sua logo ao QR (opcional)</label
-            >
-            <input
-              type="file"
-              class="form-control"
-              id="logo"
-              accept=".png, .jpg, .jpeg"
-            />
-          </div>
+          <div class="input-wrapper">
+            <div class="input-group">
+                <label for="cor" class="input-group-text">Informe a Cor Desejada:</label>
+                <input type="color" id="cor" class="form-control form-control-color" value="#000000" title="Escolha a cor" />
+            </div>
+            <div class="input-group" style=" margin-left: 4%;">
+                <label class="input-group-text" for="logo">Adicione sua logo ao QR (opcional)</label>
+                <input type="file" class="form-control" id="logo" accept=".png, .jpg, .jpeg" />
+            </div>
+        </div>
+        
         </div>
 
         <button id="gerar" class="btn btn-primary">Gerar o QRcode</button>
